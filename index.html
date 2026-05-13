@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<title></title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="title">
+            <h1>Raspberry Monitor</h1>
+        </div>
+            <div class="console">
+                <button class="btn btn-info btn-active" id="cpu-btn">CPU</button>
+                <button class="btn btn-success" id="mem-btn">Memory</button>
+                <button class="btn btn-highligth" id="stat-btn">Info</button>
+            </div>
+        <div class="display">
+            <div id="error"></div>
+            <!--CPU----------------------------------------------------------------------------------->
+            <div class="card column" id="cpu-card">
+                    <h4>Temperature</h4>
+                    <p><span id="temp"></span></p>
+                    <p><meter id="cputemp" min="0" max="100"></meter></p>
+                    <h4>Clock</h4>
+                    <p><span id="freq"></span></p>
+                    <p><meter id="cpuclock" min="500" max="1200"></meter></p>
+            </div>
+            <!--RAM----------------------------------------------------------------------------------->
+            <div class="card column" id="mem-card">
+                    <h4>Ram</h4>
+                    <p><span id="memused"></span> / <span id="memtot"></span></p>
+                    <p><meter id="ram" min="0" high="100"><span id="memfree"></span></meter></p>
+            <!--SWAP---------------------------------------------------------------------------------->
+                    <h4>Swap</h4>
+                    <p><span id="swapused"></span> / <span id="swap"></span></p>
+                    <p><meter id="swapmeter" min="0"></meter></p>
+            <!--SD------------------------------------------------------------------------------------>
+                    <h4>SD Card</h4>
+                    <p><span id="sdused"></span> / <span id="sd"></span></p>
+                    <p><meter id="sdmeter" min="0"></meter></p>
+            </div>
+            <!--Stats------------------------------------------------------------------------------------>
+            <div class="card column" id="stat-card">
+                <h4>Power on:</h4>
+                <p><span id="uptimesince"></span></p>
+                <br>
+                <h4>Uptime:</h4>
+                <p><span id="uptime"></span></p>
+            </div>
+        </div>
+    <script src="scripts.js"></script>
+
+</body>
+</html>
+
