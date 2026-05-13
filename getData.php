@@ -23,9 +23,6 @@ $sd = exec("df -h | grep /dev/mmcblk0p2 | awk '{print $2}' | tr -d 'G'");
 $sdused = exec("df -h | grep /dev/mmcblk0p2 | awk '{print $3}' | tr -d 'G'");
 $sdfree = exec("df -h | grep /dev/mmcblk0p2 | awk '{print $4}' | tr -d 'G'");
 
-
-//floatval(substr($sd,22,15));
-
 $data = [
 	"uptime"=>$uptime,
 	"uptimesince"=>$uptimesince,
