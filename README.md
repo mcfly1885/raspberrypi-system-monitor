@@ -30,8 +30,5 @@ The data is showed in three different cards:
 
 The webapp is otipmized to be accessible from mobile devices.
 
-## Hint
-- Put all file in a single directory on Raspberry Pi where the php server can read it and connect from a device in the same LAN.
-
 # Fianl Note
 This project has been tested in a local network, is simple and dosen't implement a login system.
