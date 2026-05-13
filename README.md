@@ -30,5 +30,5 @@ The data is showed in three different cards:
 
 The webapp is otipmized to be accessible from mobile devices.
 
-# Fianl Note
+# Final Note
 This project has been tested in a local network, is simple and dosen't implement a login system.
