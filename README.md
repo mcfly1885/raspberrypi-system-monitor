@@ -1,4 +1,4 @@
-# Raspberry Pi Systen Monitor
+# Raspberry Pi System Monitor
 
 A simple javacript web app that resume the system information.
 
